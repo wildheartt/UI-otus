@@ -1,13 +1,13 @@
+import React from 'react';
 import PropTypes from 'prop-types';
+
 import './Paragraph.css';
 
-const Paragraph = ({ children, className = '', size = 'medium', ...props }) => {
+function Paragraph({ children, className = '', size = 'medium' }) {
   return (
-    <p className={`paragraph paragraph--${size} ${className}`} {...props}>
-      {children}
-    </p>
+    <p className={`paragraph paragraph--${size} ${className}`}>{children}</p>
   );
-};
+}
 
 Paragraph.propTypes = {
   children: PropTypes.node.isRequired,

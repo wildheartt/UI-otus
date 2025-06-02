@@ -1,15 +1,8 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Image.css';
 
-const Image = ({
-  src,
-  alt,
-  width,
-  height,
-  rounded = false,
-  className = '',
-  ...props
-}) => {
+function Image({ src, alt, width, height, rounded = false, className = '' }) {
   return (
     <img
       src={src}
@@ -17,10 +10,9 @@ const Image = ({
       width={width}
       height={height}
       className={`image ${rounded ? 'image--rounded' : ''} ${className}`}
-      {...props}
     />
   );
-};
+}
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
