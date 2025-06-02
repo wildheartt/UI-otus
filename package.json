@@ -1,0 +1,56 @@
+{
+  "name": "ui-components-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "loki:test": "loki test",
+    "loki:approve": "loki approve",
+    "loki:update": "loki update"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.3",
+    "@storybook/addon-interactions": "^7.6.3",
+    "@storybook/addon-links": "^7.6.3",
+    "@storybook/blocks": "^7.6.3",
+    "@storybook/react": "^7.6.3",
+    "@storybook/react-vite": "^7.6.3",
+    "@storybook/testing-library": "^0.2.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "loki": "^0.33.1",
+    "storybook": "^7.6.3",
+    "vite": "^5.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/UI-otus.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "storybook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768
+      }
+    }
+  }
+}
