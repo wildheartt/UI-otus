@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "NODE_ENV=production storybook build",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@storybook/addon-docs": "^9.0.4",
+    "@storybook/addon-essentials": "^9.0.4",
     "@storybook/react-vite": "^9.0.4",
     "eslint": "^8.55.0",
     "eslint-plugin-storybook": "^9.0.4",

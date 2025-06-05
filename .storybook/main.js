@@ -15,4 +15,15 @@ export default {
         prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
     },
   },
+  viteFinal: async (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      config.base = '/UI-otus/';
+    }
+
+    config.optimizeDeps = {
+      ...config.optimizeDeps,
+      exclude: [...(config.optimizeDeps?.exclude || []), 'store2'],
+    };
+    return config;
+  },
 };
