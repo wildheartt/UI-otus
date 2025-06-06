@@ -2,7 +2,7 @@ name: Build and Deploy Storybook
 
 on:
   push:
-    branches: [main]
+    branches: [storybook]
 
 permissions:
   contents: read
