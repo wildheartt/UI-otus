@@ -1,0 +1,38 @@
+{
+  "name": "ui-components-library",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build": "NODE_ENV=production storybook build",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@storybook/addon-docs": "^8.4.2",
+    "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/react-vite": "^8.4.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-storybook": "^0.9.0",
+    "storybook": "^8.4.2",
+    "vite": "^5.0.8"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "storybook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "overrides": {
+    "storybook": "$storybook"
+  }
+}
